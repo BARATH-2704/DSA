@@ -12,9 +12,9 @@ class MinStack {
             minst.push(value);
         }
         else{
-            if(st.peek()>=value){
+            if(minst.peek()>=value){
                 st.push(value);
-                minst.push(Math.min(value,minst.peek()));
+                minst.push(value);
             }
             else{
                 minst.push(minst.peek());
