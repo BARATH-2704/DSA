@@ -2,7 +2,7 @@ class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int slow =0;
         int fast =numbers.length-1;
-        while(fast>=0){
+        while(fast>=slow){
             int sum = numbers[slow]+numbers[fast];
             if(target>sum){
                 slow++;
